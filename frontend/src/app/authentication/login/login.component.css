@@ -1,0 +1,29 @@
+.login-main {
+  margin-top: 15%;
+}
+
+mat-card {
+  min-width: 30%;
+  padding: 20px 16px;
+}
+
+mat-card-header {
+  margin-bottom: 20px;
+}
+
+:host /deep/ .mat-card-header-text {
+  margin-left: 0px;
+}
+
+mat-card-title{
+  margin: 12px 0;
+}
+
+mat-card-actions {
+  margin-right: 0;
+}
+
+button {
+  min-width: 25%;
+}
+

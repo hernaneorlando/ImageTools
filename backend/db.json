@@ -1,0 +1,9 @@
+{
+  "users": [
+    {
+      "id": "test@email.com",
+      "password": "test",
+      "accessToken": "TEST"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="login-main">
+  <mat-card class="mat-elevation-z5">
+    <mat-card-header>
+      <mat-card-title>Login Page</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content fxLayout="column">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput [formControl]="password" required>
+        <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" [disabled]="loading" (click)="onSubmit()">Login</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
